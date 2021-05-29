@@ -1,0 +1,10 @@
+name: heartfalure_training_env
+dependencies:
+  - python=3.7.*
+  - pip
+
+  - pip:
+      - azureml-sdk==1.19.0
+      - azureml-defaults ==1.19.0
+      - pandas==1.0.*
+      - scikit-learn==0.24.*

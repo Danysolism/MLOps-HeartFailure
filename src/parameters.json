@@ -1,0 +1,12 @@
+{
+    "training": {
+        "n_estimators": 20
+    },
+    "evaluation": {},
+    "registration": {
+        "tags": [
+            "f1_score"
+        ]
+    },
+    "scoring": {}
+}
