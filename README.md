@@ -26,6 +26,7 @@ By running this project, you will have the opportunity to work with the followin
 
 - [![Build Status](https://dev.azure.com/aidemos/MLOps/_apis/build/status/microsoft.MLOps?branchName=master)](https://dev.azure.com/aidemos/MLOps/_build/latest?definitionId=96?branchName=master)
 - [Microsoft MLOps Python](https://github.com/Microsoft/MLOpsPython)
+- [How to get started?](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md)
 
 ## What is MLOps?
 
