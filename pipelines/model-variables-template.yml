@@ -1,0 +1,60 @@
+# Pipeline template that defines common runtime environment variables.
+variables:
+  # Source Config
+  # The directory containing the scripts for training, evaluating, and registering the model
+  - name: SOURCES_DIR_TRAIN
+    value: src
+
+  - name: TRAIN_SCRIPT_PATH
+    value: training/train_aml.py
+
+  - name: EVALUATE_SCRIPT_PATH
+    value: evaluate/evaluate_model.py
+
+  - name: REGISTER_SCRIPT_PATH
+    value: register/register_model.py
+
+  - name: SCORE_SCRIPT
+    value: scoring/score.py
+
+  # Azure ML Variables
+  - name: EXPERIMENT_NAME
+    value: mlopsheartfailure
+
+  - name: DATASET_NAME
+    value: heart_ds
+
+  - name: DATASET_VERSION
+    value: latest
+
+  - name: TRAINING_PIPELINE_NAME
+    value: "heartfailure-Training-Pipeline"
+
+  - name: MODEL_NAME
+    value: heartfailure_model.pkl
+
+  # AML Compute Cluster Config
+  - name: AML_ENV_NAME
+    value: model_training_env
+
+  - name: AML_ENV_TRAIN_CONDA_DEP_FILE
+    value: "conda_dependencies.yml"
+
+  - name: AML_COMPUTE_CLUSTER_CPU_SKU
+    value: STANDARD_DS2_V2
+
+  - name: AML_COMPUTE_CLUSTER_NAME
+    value: train-cluster
+
+  - name: AML_CLUSTER_MIN_NODES
+    value: 0
+
+  - name: AML_CLUSTER_MAX_NODES
+    value: 4
+
+  - name: AML_CLUSTER_PRIORITY
+    value: lowpriority
+
+  # The name for the (docker/webapp) scoring image
+  - name: IMAGE_NAME
+    value: "heartfailuretrained"
