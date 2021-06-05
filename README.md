@@ -49,6 +49,7 @@ This pipeline will automatically create the resource group and the services need
 ### Azure Machine Learning Pipeline
 
 This pipeline will train the model using historical data. This pipeline will train the ML model and register it in Azure ML. Azure Machine Learning provides a whole host of functionality to accelerate the end-to-end machine learning lifecycle to help deploy ML solutions quickly and robustly. With it, we can store and version the environment in which we execute the training and the scoring. Moreover, we can track the experiment runs and the metrics defined. Once the training is complete, the model artifact will trigger the DevOps release pipeline, explained below.
+![image](https://user-images.githubusercontent.com/7260235/120882864-87fd5100-c5da-11eb-8734-5e2f65b7d206.png)
 
 ### Azure DevOps Release Pipeline
 
